@@ -1,17 +1,29 @@
 <template>
   <div id="app">
+    <div id="header">
+      <main-navbar/>
+    </div>
+    
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="안녕하세요 오명학의 VuePage입니다."/>
+    
+    <div id="footer">
+      <main-footer/>
+    </div>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import navbar from './components/navbar.vue'
+import footer from './components/footer.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    'main-navbar': navbar,
+    'main-footer': footer
   }
 }
 </script>
