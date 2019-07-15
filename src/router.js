@@ -3,22 +3,21 @@ import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
+import Main from "./views/main.vue";
 import Landing from "./views/Landing.vue";
-import Login from "./views/Login.vue";
-import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
 export default new Router({
+  mode: "history",
   linkExactActiveClass: "active",
   routes: [
     {
       path: "/",
-      name: "components",
+      name: "main",
       components: {
         header: AppHeader,
-        default: Components,
+        default: Main,
         footer: AppFooter
       }
     },
@@ -32,29 +31,11 @@ export default new Router({
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/components",
+      name: "landing",
       components: {
         header: AppHeader,
-        default: Login,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/register",
-      name: "register",
-      components: {
-        header: AppHeader,
-        default: Register,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/profile",
-      name: "profile",
-      components: {
-        header: AppHeader,
-        default: Profile,
+        default: Components,
         footer: AppFooter
       }
     }
