@@ -23,6 +23,7 @@
 
             <div class="collapse navbar-collapse" :class="{show: toggled}" :id="contentId" v-click-outside="closeMenu">
                 <div class="navbar-collapse-header">
+                    Personal Link
                     <slot name="content-header" :close-menu="closeMenu"></slot>
                 </div>
                 <slot :close-menu="closeMenu"></slot>

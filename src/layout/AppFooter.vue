@@ -7,13 +7,23 @@
                     <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4> -->
                 <!-- </div> -->
                 <div class="col-lg-12 text-lg-right btn-wrapper">
+                    <router-link rel="noopener" to="/login"
+                       class="btn btn-neutral btn-icon-only btn-app btn-md btn-round" data-toggle="tooltip"
+                       data-original-title="Follow us on Facebook">
+                        <i class="fa fa-user"></i>
+                    </router-link>
+                    <a target="_blank" rel="noopener" href="https://dhaudgkr.tistory.com"
+                       class="btn btn-neutral btn-icon-only btn-facebook btn-md btn-round" data-toggle="tooltip"
+                       data-original-title="Follow us on Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
                     <a target="_blank" rel="noopener" href="https://dhaudgkr.tistory.com"
                        class="btn btn-neutral btn-icon-only btn-dribbble btn-md btn-round" data-toggle="tooltip"
                        data-original-title="Visit my tistory">
                         <i class="fa fa-book"></i>
                     </a>
                     <a target="_blank" rel="noopener" href="https://github.com/dh37789"
-                       class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-md" data-toggle="tooltip"
+                       class="btn btn-neutral btn-icon-only btn-github btn-round btn-md" data-toggle="tooltip"
                        data-original-title="Star on Github">
                         <i class="fa fa-github"></i>
                     </a>

@@ -3,8 +3,10 @@ import Router from "vue-router";
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Components from "./views/Components.vue";
-import Main from "./views/main.vue";
+import Home from "./views/Home.vue";
 import Landing from "./views/Landing.vue";
+import Login from "./views/Login.vue";
+import Login2 from "./views/Login2.vue";
 
 Vue.use(Router);
 
@@ -14,10 +16,10 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "main",
+      name: "home",
       components: {
         header: AppHeader,
-        default: Main,
+        default: Home,
         footer: AppFooter
       }
     },
@@ -32,10 +34,28 @@ export default new Router({
     },
     {
       path: "/components",
-      name: "landing",
+      name: "components",
       components: {
         header: AppHeader,
         default: Components,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/login",
+      name: "login",
+      components: {
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/login2",
+      name: "login2",
+      components: {
+        header: AppHeader,
+        default: Login2,
         footer: AppFooter
       }
     }
